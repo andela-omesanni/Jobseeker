@@ -1,0 +1,255 @@
+/****************************************************************** 
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   
+   Eric Meyer's reset.css for cross-browser compatibility issues
+
+******************************************************************/
+
+html,  div, body, span, applet, object, iframe,
+h1, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, 
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+
+
+/*****************************************************
+ CSS FOR INDEX PAGE
+*****************************************************/
+
+body {
+   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#whole-wrapper {
+  margin:  auto;
+  height: 1360px;
+  width: 100%;
+  box-shadow: 0 0 15px #333;
+}
+
+#header {
+  height: 450px;
+  background:  url(images/bg011.jpg) no-repeat; 
+  background-size: 100%;
+}
+
+#header nav { width: 100%; }
+
+#header ul#menu {
+  float: right;
+  list-style: none;
+  margin: 15px 5px 0 0;
+}
+
+#header ul#menu li {
+ display: block;
+ float: left;
+ padding: 8px;
+ text-align: center;
+}
+
+#header ul#menu li:nth-child(3) {
+  margin-right: 20px;
+}
+
+#header ul#menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #040404;
+}
+
+#header ul#menu li a:hover {
+  text-decoration: underline;
+}
+
+#post-a-job {
+  width: 390px;
+  position: relative;
+  top: 110px;
+  left: 179px;
+  color: #030303;
+}
+
+#post-a-job p{
+   font-size: 16px;
+   line-height: 20px;
+}
+
+#post-a-job  h2{ margin-bottom: -8px; text-align: left; letter-spacing: 0; }
+#post-a-job input, #create-profile input { 
+    width: 150px; 
+	height:40px; 
+	background-color: #208b0a; 
+	color: white; 
+	border: none;
+	padding: 8px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 16px;
+}
+
+#hire {
+  width: 100%;
+  height: 24.7%;
+  color: white;
+  position: relative;
+  bottom: -151px;
+  background: rgba(38,24,24,0.7)/*rgba(66, 66, 66, 0.8)*/;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#hire ul { margin-top: 0px; margin-left: 28%; }
+
+#hire ul li {
+ display: block;
+ float: left;
+ padding: 8px;
+ text-align: center;
+ font-size: 16px;
+}
+
+#hire ul li:not(:first-child):before {
+ content: "\2022"; 
+ padding-right: 15px;
+}
+
+#hire h2 {  
+   font-size: 1.9em;
+   padding-top: 20px;
+   padding-bottom: 0; 
+   margin: 0;
+}
+
+#how-it-works {
+   height: 280px;
+   background: #f7f7f7;
+   width: 100%;
+}
+
+#how-it-works a, #how-it-works h2 { color: #777; text-decoration: none; }
+#how-it-works a:hover { color: #333333; }
+
+#how-it-works h2 {
+   font-size: 30px;
+   padding-top: 25px;
+}
+
+.process {
+  float: left;
+  margin: 10px 0 0 25px;
+  width: 200px;
+  height: 120px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.centralize { width: 70%; position: relative; left: 20%; }
+.process:nth-child(5) { width: 150px; }
+.process pre { font-family: Arial, Helvetica, sans-serif; margin-left: 20px;  } 
+.process:nth-child(4) p {margin-bottom: 12px; } 
+.process img { margin-left: 30px; }
+.process:nth-child(4) img { margin-bottom: 7px;}
+.process:nth-child(2) img { margin-top: 6px;}
+.process:nth-child(4) img { margin-top: 0px; }
+
+#create-profile { 
+  height: 300px; 
+  background:  url(images/blur.jpg) no-repeat; 
+  background-size: 100%; 
+  background-attachment: cover;
+  color: #040301;
+  width: 100%;
+}
+
+h2 { text-align: center; }
+#partners h2, #create-profile h2, #how-it-works h2, #hire h2 { font-weight: normal; }
+#create-profile h2 { font-size: 36px; padding-top: 15px; }
+#create-profile p { font-size: 17px; line-height: 10px; }
+#create-profile input { position: relative; left: 44.5%; bottom: -15px; }
+
+#partners {
+  height: 260px;
+  color: #a5a5a5;
+  padding: 0 10px 0 10px;
+}
+.partner-grid {
+  border: 1px solid #f0f0f0;
+  height: 120px;
+  width: 180px;
+  float: left;
+  margin-left: 30px;
+}
+.grid-1 { background: url(images/punjab.JPG) center center no-repeat; }
+.grid-2 { background: url(images/faces.JPG) center center no-repeat; }
+.grid-3 { background: url(images/success.JPG) center center no-repeat; }
+.grid-4 { background: url(images/tevta.JPG) center center no-repeat; }
+
+#partners h2 { font-size: 1.9em; }
+#footer, #partners, #hire, #header, #how-it-works, #create-profile {
+   float: left;
+   box-sizing: border-box;
+   width: 100%;
+}
+
+#footer {
+  height: 70px;
+  padding: 15px 0 0 0;
+  border-top: 3px solid #218A0A;
+  background: #333;
+}
+
+#footer ul li {
+ display: block;
+ float: left;
+ text-align: center;
+ 
+}
+#footer ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 8px 0 8px;
+  text-decoration: none;
+  font-size: 11px;
+  color: white;
+  margin-top: -40px;
+}
